@@ -8,7 +8,7 @@ find_package(glm REQUIRED)
 
 add_executable(Cube_Game
         src/main.cpp
-        src/glad.c src/render/Shader.cpp src/render/Shader.hpp src/render/Camera.cpp src/render/Camera.hpp src/Direction.hpp include/stb_image.h)
+        src/glad.c src/render/Shader.cpp src/render/Shader.hpp src/render/Camera.cpp src/render/Camera.hpp src/Direction.hpp include/stb_image.h src/objects/Object.hpp src/objects/Cube.cpp src/objects/Cube.hpp src/models/cube.hpp)
 
 target_include_directories(Cube_Game
         PUBLIC include)

@@ -55,8 +55,6 @@ void Camera::Tilt(float dx, float dy) {
 
     this->yaw = fmodf(this->yaw, 360.0f);
     this->pitch = glm::clamp(this->pitch, -89.99f, 89.99f);
-
-    this->UpdateView();
 }
 
 glm::mat4 Camera::GetViewMatrix() {
